@@ -43,7 +43,12 @@ endDate = (endDate.strftime('%Y-%m-%d'))
 
 @app.route("/")
 def home():
-    return (f"Test<br/>")
+    return (f"<h1>Weather Analysis</h1><br/>"
+            f"<h2>Links</h2><br/>"
+            f"/api/v1.0/precipitation<br/>"
+            f"/api/v1.0/stations<br/>"
+            f"/api/v1.0/tobs<br/>"
+            f"/api/v1.0/datesearch/*your start date here */*your end date here*")
 
 
 @app.route('/api/v1.0/precipitation')
